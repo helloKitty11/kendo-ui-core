@@ -2579,6 +2579,8 @@ Can be set to a JavaScript object which represents the editing configuration.
 
 > The "inline" and "popup" editing modes are triggered by the "edit" column command. Thus it is required to have a column with an "edit" command.
 
+> In order for the "inline" editing mode to work, dataSource.schema.model must be set like in this example [Inline editing](http://demos.telerik.com/kendo-ui/grid/editing-inline)
+
 #### Example - enable editing
     <div id="grid"></div>
     <script>
