@@ -421,7 +421,7 @@ The supported operators are:
 * `"isempty"`
 * `"isnotempty"`
 
-The last eight are supported only for string fields.
+The last eight are supported only for string fields. If operator is a function then it will receive two arguments. First one is the value of the field specified in `filter.field` of the currently tested element. Second one is the value specified in `filter.value`. If `filter.field` and `filter.value` are not specified then function will receive only one argument which the element itself. Function must return `true` or `false`.
 
 #### Example - set the filter operator
 
